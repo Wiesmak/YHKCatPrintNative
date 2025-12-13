@@ -12,6 +12,12 @@ Abstract:
 
 export module yhkcatprint;
 
+/**
+ * \mainpage YHK Bluetooth Cat Printer Library
+ * 
+ * This library provides interfaces and implementations for interacting with YHK Bluetooth Cat Printers.
+ */
+
 export import :rfcomm;
 export import :device;
 export import :adapter;

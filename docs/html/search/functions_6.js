@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['protoadapter_0',['ProtoAdapter',['../classyhkcatprint_1_1_proto_adapter.html#a4251e2f6092082cc44afca74885f14bb',1,'yhkcatprint::ProtoAdapter::ProtoAdapter()'],['../class_proto_adapter.html#a4251e2f6092082cc44afca74885f14bb',1,'ProtoAdapter::ProtoAdapter()']]],
-  ['protobluetoothmanager_1',['ProtoBluetoothManager',['../classyhkcatprint_1_1_proto_bluetooth_manager.html#acfc117d518d517b19235965ecaf9175f',1,'yhkcatprint::ProtoBluetoothManager']]],
-  ['protodevice_2',['ProtoDevice',['../classyhkcatprint_1_1_proto_device.html#ae5d56a7513b7d8d3ec71795c3577b976',1,'yhkcatprint::ProtoDevice::ProtoDevice()'],['../class_proto_device.html#ae5d56a7513b7d8d3ec71795c3577b976',1,'ProtoDevice::ProtoDevice()']]],
-  ['protorfcommsocket_3',['ProtoRfcommSocket',['../classyhkcatprint_1_1_proto_rfcomm_socket.html#a515a5451523da534669c8de8313caf7f',1,'yhkcatprint::ProtoRfcommSocket::ProtoRfcommSocket()'],['../class_proto_rfcomm_socket.html#a515a5451523da534669c8de8313caf7f',1,'ProtoRfcommSocket::ProtoRfcommSocket()']]]
-];
