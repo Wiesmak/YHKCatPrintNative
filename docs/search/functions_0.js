@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['adapterwin32_0',['AdapterWin32',['../classyhkcatprint_1_1_adapter_win32.html#ad3538c702c5a5ce129126c4c12d51b10',1,'yhkcatprint::AdapterWin32']]],
+  ['available_1',['available',['../classyhkcatprint_1_1_i_rfcomm_socket.html#ac6863e6717d99330be736b2e7befdd8a',1,'yhkcatprint::IRfcommSocket::available()'],['../classyhkcatprint_1_1_proto_rfcomm_socket.html#a90a2d737cfe9ad85ef8fde3403274a6e',1,'yhkcatprint::ProtoRfcommSocket::available()'],['../classyhkcatprint_1_1_i_rfcomm_socket.html#aea378a7166f348e42e4a95a352f44d2a',1,'yhkcatprint::IRfcommSocket::available()'],['../classyhkcatprint_1_1_rfcomm_socket_win32.html#a4eadab10b8a8cdac79e096a80ca9d6f2',1,'yhkcatprint::RfcommSocketWin32::available()'],['../class_i_rfcomm_socket.html#ac6863e6717d99330be736b2e7befdd8a',1,'IRfcommSocket::available()=0'],['../class_i_rfcomm_socket.html#aea378a7166f348e42e4a95a352f44d2a',1,'IRfcommSocket::available()=0'],['../class_proto_rfcomm_socket.html#a90a2d737cfe9ad85ef8fde3403274a6e',1,'ProtoRfcommSocket::available()']]]
+];
