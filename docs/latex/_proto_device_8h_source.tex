@@ -1,0 +1,42 @@
+\doxysection{Proto\+Device.\+h}
+\hypertarget{_proto_device_8h_source}{}\label{_proto_device_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*++}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Copyright\ (C)\ 2025\ Umamusume\ Polska}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{Module\ Name:}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ ProtoRfcommSocket.h}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{Abstract:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ \ Prototype\ implementation\ of\ IDevice\ using\ ProtoRfcommSocket}}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{-\/-\/*/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_device_8h}{IDevice.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }yhkcatprint}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_proto_device_ae5d56a7513b7d8d3ec71795c3577b976}{ProtoDevice}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_device}{IDevice}}}
+\DoxyCodeLine{00038\ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classyhkcatprint_1_1_proto_device_ae5d56a7513b7d8d3ec71795c3577b976}{ProtoDevice}}(\textcolor{keyword}{const}\ std::string\&\ address,\ \textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_device_a96e187b610e479acd68de1a12a15dc36}{\string~ProtoDevice}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb}{DEVICE\_INFO}}\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_device_a47016825ce95323a0124229ba4b1bd64}{getInfo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::shared\_ptr<IRfcommSocket>\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_device_a9d806328cc66d7b5c47efecda5a4ef69}{createRfcommSocket}}(uint8\_t\ channel,\ \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d}{ConnectOptions}}\ options)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::string\ deviceAddress;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ std::string\ deviceName;}
+\DoxyCodeLine{00065\ \ \ \ \ \};}
+\DoxyCodeLine{00066\ \}}
+
+\end{DoxyCode}

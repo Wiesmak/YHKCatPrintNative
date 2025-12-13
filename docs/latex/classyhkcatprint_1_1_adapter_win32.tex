@@ -1,0 +1,98 @@
+\doxysection{yhkcatprint\+::Adapter\+Win32\texorpdfstring{$<$}{<} TDevice \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classyhkcatprint_1_1_adapter_win32}{}\label{classyhkcatprint_1_1_adapter_win32}\index{yhkcatprint::AdapterWin32$<$ TDevice $>$@{yhkcatprint::AdapterWin32$<$ TDevice $>$}}
+
+
+Win32 implementation of \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} interface.  
+
+
+Inheritance diagram for yhkcatprint\+::Adapter\+Win32\texorpdfstring{$<$}{<} TDevice \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyhkcatprint_1_1_adapter_win32}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structyhkcatprint_1_1_adapter_win32_1_1_impl}{Impl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classyhkcatprint_1_1_adapter_win32_ad3538c702c5a5ce129126c4c12d51b10}\label{classyhkcatprint_1_1_adapter_win32_ad3538c702c5a5ce129126c4c12d51b10} 
+{\bfseries Adapter\+Win32} ()=default
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classyhkcatprint_1_1_adapter_win32}{Adapter\+Win32}. \end{DoxyCompactList}\item 
+\Hypertarget{classyhkcatprint_1_1_adapter_win32_a420d386e0aa535705ed9e9f920b788d7}\label{classyhkcatprint_1_1_adapter_win32_a420d386e0aa535705ed9e9f920b788d7} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Adapter\+Win32} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+ADAPTER\+\_\+\+INFO \mbox{\hyperlink{classyhkcatprint_1_1_adapter_win32_a459b345de07504e7256699367c3d4dae}{get\+Info}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves information about the Bluetooth adapter. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ TDevice $>$ $>$ \mbox{\hyperlink{classyhkcatprint_1_1_adapter_win32_a82a3ed8ef1a67af8a64a8123a6cd251a}{get\+Paired\+Devices}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves a list of paired Bluetooth devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter}{yhkcatprint\+::\+IAdapter}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAdapter} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAdapter} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$std\+::derived\+\_\+from$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ TDevice$>$\newline
+class yhkcatprint\+::\+Adapter\+Win32$<$ TDevice $>$}
+Win32 implementation of \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} interface. 
+
+This class implements the \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} interface using the Windows Bluetooth API. It provides functionality to interact with Bluetooth adapters on Windows platforms.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TDevice} & Type of Bluetooth device to use, must derive from \doxylink{classyhkcatprint_1_1_i_device}{IDevice}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classyhkcatprint_1_1_adapter_win32_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classyhkcatprint_1_1_adapter_win32_a459b345de07504e7256699367c3d4dae}\index{yhkcatprint::AdapterWin32$<$ TDevice $>$@{yhkcatprint::AdapterWin32$<$ TDevice $>$}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!yhkcatprint::AdapterWin32$<$ TDevice $>$@{yhkcatprint::AdapterWin32$<$ TDevice $>$}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_adapter_win32_a459b345de07504e7256699367c3d4dae} 
+template$<$std\+::derived\+\_\+from$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ TDevice$>$ \\
+ADAPTER\+\_\+\+INFO \mbox{\hyperlink{classyhkcatprint_1_1_adapter_win32}{yhkcatprint\+::\+Adapter\+Win32}}$<$ TDevice $>$\+::get\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [export]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves information about the Bluetooth adapter. 
+
+\begin{DoxyReturn}{Returns}
+ADAPTER\+\_\+\+INFO structure containing the adapter\textquotesingle{}s address and name. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_a905ff4d448679f63647b3dd637332a17}{yhkcatprint\+::\+IAdapter}}.
+
+\Hypertarget{classyhkcatprint_1_1_adapter_win32_a82a3ed8ef1a67af8a64a8123a6cd251a}\index{yhkcatprint::AdapterWin32$<$ TDevice $>$@{yhkcatprint::AdapterWin32$<$ TDevice $>$}!getPairedDevices@{getPairedDevices}}
+\index{getPairedDevices@{getPairedDevices}!yhkcatprint::AdapterWin32$<$ TDevice $>$@{yhkcatprint::AdapterWin32$<$ TDevice $>$}}
+\doxysubsubsection{\texorpdfstring{getPairedDevices()}{getPairedDevices()}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_adapter_win32_a82a3ed8ef1a67af8a64a8123a6cd251a} 
+template$<$std\+::derived\+\_\+from$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ TDevice$>$ \\
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ TDevice $>$ $>$ \mbox{\hyperlink{classyhkcatprint_1_1_adapter_win32}{yhkcatprint\+::\+Adapter\+Win32}}$<$ TDevice $>$\+::get\+Paired\+Devices (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [export]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves a list of paired Bluetooth devices. 
+
+\begin{DoxyReturn}{Returns}
+Vector of shared pointers to \doxylink{classyhkcatprint_1_1_i_device}{IDevice} representing paired devices. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{yhkcatprint\+::\+IAdapter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{yhkcatprint_8win32_8adapter_8ixx}{yhkcatprint.\+win32.\+adapter.\+ixx}}\end{DoxyCompactItemize}

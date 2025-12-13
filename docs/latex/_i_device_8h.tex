@@ -1,0 +1,81 @@
+\doxysection{IDevice.\+h File Reference}
+\hypertarget{_i_device_8h}{}\label{_i_device_8h}\index{IDevice.h@{IDevice.h}}
+
+
+Defines an abstract interface representing a remote Bluetooth device.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}IRfcomm\+Socket.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o}{yhkcatprint\+::\+\_\+\+DEVICE\+\_\+\+INFO}}
+\begin{DoxyCompactList}\small\item\em Structure containing Bluetooth device information. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_device}{yhkcatprint\+::\+IDevice}}
+\begin{DoxyCompactList}\small\item\em Abstract interface representing a remote Bluetooth device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb}\label{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb} 
+typedef struct \mbox{\hyperlink{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o}{yhkcatprint\+::\+\_\+\+DEVICE\+\_\+\+INFO}} {\bfseries yhkcatprint\+::\+DEVICE\+\_\+\+INFO}
+\begin{DoxyCompactList}\small\item\em Structure containing Bluetooth device information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d}{yhkcatprint\+::\+Connect\+Options}} \{ \newline
+\mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}{yhkcatprint\+::\+TIMEOUT\+\_\+\+NONE}} = 0
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}{yhkcatprint\+::\+TIMEOUT\+\_\+\+DEFAULT}} = 1
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}{yhkcatprint\+::\+TIMEOUT\+\_\+\+LONG}} = 2
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}{yhkcatprint\+::\+TIMEOUT\+\_\+\+NONE}} = 0
+, \newline
+\mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}{yhkcatprint\+::\+TIMEOUT\+\_\+\+DEFAULT}} = 1
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}{yhkcatprint\+::\+TIMEOUT\+\_\+\+LONG}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Connection options for RFCOMM sockets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines an abstract interface representing a remote Bluetooth device. 
+
+This header provides an interface for interacting with Bluetooth devices, including retrieving device information and creating RFCOMM sockets. 
+
+\label{doc-enum-members}
+\Hypertarget{_i_device_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d}\index{IDevice.h@{IDevice.h}!ConnectOptions@{ConnectOptions}}
+\index{ConnectOptions@{ConnectOptions}!IDevice.h@{IDevice.h}}
+\doxysubsubsection{\texorpdfstring{ConnectOptions}{ConnectOptions}}
+{\footnotesize\ttfamily \label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d} 
+enum \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d}{yhkcatprint\+::\+Connect\+Options}}}
+
+
+
+Connection options for RFCOMM sockets. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_NONE@{TIMEOUT\_NONE}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_NONE@{TIMEOUT\_NONE}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852} 
+TIMEOUT\+\_\+\+NONE&No timeout; block indefinitely. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_DEFAULT@{TIMEOUT\_DEFAULT}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_DEFAULT@{TIMEOUT\_DEFAULT}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e} 
+TIMEOUT\+\_\+\+DEFAULT&Default timeout duration. 5 seconds timeout duration. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_LONG@{TIMEOUT\_LONG}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_LONG@{TIMEOUT\_LONG}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83} 
+TIMEOUT\+\_\+\+LONG&Long timeout duration. 30 seconds timeout duration. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_NONE@{TIMEOUT\_NONE}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_NONE@{TIMEOUT\_NONE}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852} 
+TIMEOUT\+\_\+\+NONE&No timeout; block indefinitely. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_DEFAULT@{TIMEOUT\_DEFAULT}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_DEFAULT@{TIMEOUT\_DEFAULT}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e} 
+TIMEOUT\+\_\+\+DEFAULT&Default timeout duration. 5 seconds timeout duration. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEOUT\_LONG@{TIMEOUT\_LONG}!IDevice.h@{IDevice.h}}\index{IDevice.h@{IDevice.h}!TIMEOUT\_LONG@{TIMEOUT\_LONG}}}\Hypertarget{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}\label{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83} 
+TIMEOUT\+\_\+\+LONG&Long timeout duration. 30 seconds timeout duration. \\
+\hline
+
+\end{DoxyEnumFields}

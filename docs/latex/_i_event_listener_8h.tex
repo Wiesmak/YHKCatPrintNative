@@ -1,0 +1,30 @@
+\doxysection{IEvent\+Listener.\+h File Reference}
+\hypertarget{_i_event_listener_8h}{}\label{_i_event_listener_8h}\index{IEventListener.h@{IEventListener.h}}
+
+
+Abstract interface for receiving asynchronous events.  
+
+
+{\ttfamily \#include "{}IDevice.\+h"{}}\newline
+{\ttfamily \#include "{}IRfcomm\+Socket.\+h"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structyhkcatprint_1_1___e_r_r_o_r___i_n_f_o}{yhkcatprint\+::\+\_\+\+ERROR\+\_\+\+INFO}}
+\begin{DoxyCompactList}\small\item\em Structure representing error information. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener}{yhkcatprint\+::\+IEvent\+Listener}}
+\begin{DoxyCompactList}\small\item\em Abstract interface for receiving asynchronous events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_i_event_listener_8h_ab3606cf6b62ed7eaa122b39c20983fa0}\label{_i_event_listener_8h_ab3606cf6b62ed7eaa122b39c20983fa0} 
+typedef struct \mbox{\hyperlink{structyhkcatprint_1_1___e_r_r_o_r___i_n_f_o}{yhkcatprint\+::\+\_\+\+ERROR\+\_\+\+INFO}} {\bfseries yhkcatprint\+::\+ERROR\+\_\+\+INFO}
+\begin{DoxyCompactList}\small\item\em Structure representing error information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for receiving asynchronous events. 
+
+This header defines the IEvent\+Listener interface, which provides asynchronous event callbacks for device connections, disconnections, data reception, socket closures, and error handling. 

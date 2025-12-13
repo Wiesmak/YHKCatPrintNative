@@ -1,0 +1,49 @@
+\doxysection{Proto\+Adapter.\+h}
+\hypertarget{_proto_adapter_8h_source}{}\label{_proto_adapter_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*++}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Copyright\ (C)\ 2025\ Umamusume\ Polska}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{Module\ Name:}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ ProtoAdapter.h}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{Abstract:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ \ Prototype\ implementation\ of\ IAdapter\ using\ ProtoDevice}}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{-\/-\/*/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}IAdapter.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <WinSock2.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <ws2bth.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <BluetoothAPIs.h>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ Link\ with\ Bthprops.lib}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}Bthprops.lib"{})}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{namespace\ }yhkcatprint\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_proto_adapter_a4251e2f6092082cc44afca74885f14bb}{ProtoAdapter}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter}{IAdapter}}}
+\DoxyCodeLine{00043\ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classyhkcatprint_1_1_proto_adapter_a4251e2f6092082cc44afca74885f14bb}{ProtoAdapter}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_adapter_a21335f911f4407e50448ea87a078e149}{\string~ProtoAdapter}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ ADAPTER\_INFO\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_adapter_aa0fb319cb276d53e73ddc8ffc313e198}{getInfo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<IDevice>>\ \mbox{\hyperlink{classyhkcatprint_1_1_proto_adapter_a69ec0831ed078609ee468fd512df8aa4}{getPairedDevices}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::string\ wideStringToString(\textcolor{keyword}{const}\ std::wstring\&\ wstr);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::string\ formatBthAddr(\textcolor{keyword}{const}\ BTH\_ADDR\&\ addr);}
+\DoxyCodeLine{00073\ \ \ \ \ \};}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+
+\end{DoxyCode}

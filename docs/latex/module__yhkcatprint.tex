@@ -1,0 +1,101 @@
+\doxysection{yhkcatprint Module Reference}
+\hypertarget{module__yhkcatprint}{}\label{module__yhkcatprint}\index{yhkcatprint Module Reference@{yhkcatprint Module Reference}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket}{yhkcatprint\+::\+IRfcomm\+Socket}}
+\begin{DoxyCompactList}\small\item\em Abstract interface for RFCOMM socket communication. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o}{yhkcatprint\+::\+\_\+\+DEVICE\+\_\+\+INFO}}
+\begin{DoxyCompactList}\small\item\em Structure containing Bluetooth device information. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_device}{yhkcatprint\+::\+IDevice}}
+\begin{DoxyCompactList}\small\item\em Abstract interface representing a remote Bluetooth device. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager}{yhkcatprint\+::\+IBluetooth\+Manager}}
+\begin{DoxyCompactList}\small\item\em Abstract interface representing entry point for Bluetooth management. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structyhkcatprint_1_1___a_d_a_p_t_e_r___i_n_f_o}{yhkcatprint\+::\+\_\+\+ADAPTER\+\_\+\+INFO}}
+\begin{DoxyCompactList}\small\item\em Structure containing Bluetooth adapter information. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter}{yhkcatprint\+::\+IAdapter}}
+\begin{DoxyCompactList}\small\item\em Abstract interface representing device Bluetooth adapter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{yhkcatprint_8device_8ixx_a26008e48b0e5f93ce6510ced5fbf563d}{yhkcatprint\+::\+Connect\+Options}} \{ \newline
+\mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}{yhkcatprint\+::\+TIMEOUT\+\_\+\+NONE}} = 0
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}{yhkcatprint\+::\+TIMEOUT\+\_\+\+DEFAULT}} = 1
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}{yhkcatprint\+::\+TIMEOUT\+\_\+\+LONG}} = 2
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da73dc86a2f1c498ab9beae3a882d05852}{yhkcatprint\+::\+TIMEOUT\+\_\+\+NONE}} = 0
+, \newline
+\mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563daa2da5b9c07f1f5b1bcc3ef1a1f0b120e}{yhkcatprint\+::\+TIMEOUT\+\_\+\+DEFAULT}} = 1
+, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563da2b0dd0ecffda0ff51adae7901a824e83}{yhkcatprint\+::\+TIMEOUT\+\_\+\+LONG}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Connection options for RFCOMM sockets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classyhkcatprint_1_1_i_rfcomm_socket_a2b3e580f5d1ff82eb21dde15e61085cd}\label{classyhkcatprint_1_1_i_rfcomm_socket_a2b3e580f5d1ff82eb21dde15e61085cd} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IRfcomm\+Socket} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_a8358446f251211b2257e1c9e09c18767}{connect}} ()=0
+\begin{DoxyCompactList}\small\item\em Establishes a connection to the remote RFCOMM device. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_aa7699408a156f03168f48fbb7e8a10ab}{connect}} (std\+::chrono\+::nanoseconds timeout)=0
+\begin{DoxyCompactList}\small\item\em Establishes a connection to the remote RFCOMM device with a timeout. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_a4ebf3e24474a10fcd35ee66525cb64f2}{send}} (const std\+::uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, size\+\_\+t size)=0
+\begin{DoxyCompactList}\small\item\em Sends data over the RFCOMM connection. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_acab6e7d3237cc5e66acbd8a7d5dcdf52}{receive}} (std\+::uint8\+\_\+t \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t size)=0
+\begin{DoxyCompactList}\small\item\em Receives data from the RFCOMM connection. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_aea378a7166f348e42e4a95a352f44d2a}{available}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the number of bytes available to read without blocking. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket_a3ccf31a816af56705d97b00556bae0c7}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em Closes the RFCOMM connection. \end{DoxyCompactList}\item 
+\Hypertarget{classyhkcatprint_1_1_i_device_adcafac925849ec46094d7e20cee11327}\label{classyhkcatprint_1_1_i_device_adcafac925849ec46094d7e20cee11327} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IDevice} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb}{DEVICE\+\_\+\+INFO}} \mbox{\hyperlink{classyhkcatprint_1_1_i_device_ac74dec79b4b818265974f0520f5812a6}{get\+Info}} () noexcept=0
+\begin{DoxyCompactList}\small\item\em Retrieves information about the Bluetooth device. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_rfcomm_socket}{IRfcomm\+Socket}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_device_a5aef4431aa69a46c52e81b4dfc17def1}{create\+Rfcomm\+Socket}} (std\+::uint8\+\_\+t channel, \mbox{\hyperlink{_i_device_8h_a26008e48b0e5f93ce6510ced5fbf563d}{Connect\+Options}} options)=0
+\begin{DoxyCompactList}\small\item\em Creates an RFCOMM socket connected to the specified channel. \end{DoxyCompactList}\item 
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3}\label{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IBluetooth\+Manager} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ ADAPTER\+\_\+\+INFO $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711}{list\+Adapters}} ()=0
+\begin{DoxyCompactList}\small\item\em Lists available Bluetooth adapters. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1}{get\+Adapter}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the default Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41}{get\+Adapter}} (const std\+::string \&adapter\+Address)=0
+\begin{DoxyCompactList}\small\item\em Retrieves a Bluetooth adapter by its address. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896}{shutdown}} ()=0
+\begin{DoxyCompactList}\small\item\em Shuts down the Bluetooth manager and releases resources. \end{DoxyCompactList}\item 
+\Hypertarget{classyhkcatprint_1_1_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1}\label{classyhkcatprint_1_1_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAdapter} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual ADAPTER\+\_\+\+INFO \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_a905ff4d448679f63647b3dd637332a17}{get\+Info}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves information about the Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{get\+Paired\+Devices}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves a list of paired Bluetooth devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o_adac7a43d0f584ef247fd9669388d38c1}\label{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o_adac7a43d0f584ef247fd9669388d38c1} 
+std\+::string {\bfseries address}
+\begin{DoxyCompactList}\small\item\em Bluetooth address of the device in format "{}\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX"{}. \end{DoxyCompactList}\item 
+\Hypertarget{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o_a8a992b833ab33557c31050b01527f18c}\label{structyhkcatprint_1_1___d_e_v_i_c_e___i_n_f_o_a8a992b833ab33557c31050b01527f18c} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Human-\/readable name of the device. \end{DoxyCompactList}\item 
+\Hypertarget{structyhkcatprint_1_1___a_d_a_p_t_e_r___i_n_f_o_adddf354f0ddc19c5bd4b9729591e4a7f}\label{structyhkcatprint_1_1___a_d_a_p_t_e_r___i_n_f_o_adddf354f0ddc19c5bd4b9729591e4a7f} 
+std\+::string {\bfseries address}
+\begin{DoxyCompactList}\small\item\em Adapter Bluetooth address in format "{}\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX"{}. \end{DoxyCompactList}\item 
+\Hypertarget{structyhkcatprint_1_1___a_d_a_p_t_e_r___i_n_f_o_aa19dfbe061c71096fbb95dff6b59fc02}\label{structyhkcatprint_1_1___a_d_a_p_t_e_r___i_n_f_o_aa19dfbe061c71096fbb95dff6b59fc02} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Human-\/readable name of the adapter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file {\bfseries yhkcatprint.\+ixx}
+\item 
+file \mbox{\hyperlink{yhkcatprint_8adapter_8ixx}{yhkcatprint.\+adapter.\+ixx}}
+\begin{DoxyCompactList}\small\item\em Abstract interface representing device Bluetooth adapter. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{yhkcatprint_8device_8ixx}{yhkcatprint.\+device.\+ixx}}
+\begin{DoxyCompactList}\small\item\em Defines an abstract interface representing a remote Bluetooth device. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{yhkcatprint_8manager_8ixx}{yhkcatprint.\+manager.\+ixx}}
+\begin{DoxyCompactList}\small\item\em Abstract interface for Bluetooth management. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{yhkcatprint_8rfcomm_8ixx}{yhkcatprint.\+rfcomm.\+ixx}}
+\begin{DoxyCompactList}\small\item\em Defines an abstract interface for RFCOMM socket communication. \end{DoxyCompactList}\end{DoxyCompactItemize}

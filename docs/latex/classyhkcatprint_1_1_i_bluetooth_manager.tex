@@ -1,0 +1,198 @@
+\doxysection{yhkcatprint\+::IBluetooth\+Manager Class Reference}
+\hypertarget{classyhkcatprint_1_1_i_bluetooth_manager}{}\label{classyhkcatprint_1_1_i_bluetooth_manager}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+
+
+Abstract interface representing entry point for Bluetooth management.  
+
+
+
+
+{\ttfamily \#include $<$IBluetooth\+Manager.\+h$>$}
+
+Inheritance diagram for yhkcatprint\+::IBluetooth\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyhkcatprint_1_1_i_bluetooth_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3}\label{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IBluetooth\+Manager} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ ADAPTER\+\_\+\+INFO $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711}{list\+Adapters}} ()=0
+\begin{DoxyCompactList}\small\item\em Lists available Bluetooth adapters. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1}{get\+Adapter}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the default Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41}{get\+Adapter}} (const std\+::string \&adapter\+Address)=0
+\begin{DoxyCompactList}\small\item\em Retrieves a Bluetooth adapter by its address. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896}{shutdown}} ()=0
+\begin{DoxyCompactList}\small\item\em Shuts down the Bluetooth manager and releases resources. \end{DoxyCompactList}\item 
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3}\label{classyhkcatprint_1_1_i_bluetooth_manager_af60f99a30fea9f730db7797c953bebd3} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IBluetooth\+Manager} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ ADAPTER\+\_\+\+INFO $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711}{list\+Adapters}} ()=0
+\begin{DoxyCompactList}\small\item\em Lists available Bluetooth adapters. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1}{get\+Adapter}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the default Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41}{get\+Adapter}} (const std\+::string \&adapter\+Address)=0
+\begin{DoxyCompactList}\small\item\em Retrieves a Bluetooth adapter by its address. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896}{shutdown}} ()=0
+\begin{DoxyCompactList}\small\item\em Shuts down the Bluetooth manager and releases resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface representing entry point for Bluetooth management. 
+
+Manages Bluetooth adapters and global Bluetooth operations. 
+
+\label{doc-func-members}
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!getAdapter@{getAdapter}}
+\index{getAdapter@{getAdapter}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{getAdapter()}{getAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::get\+Adapter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the default Bluetooth adapter. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} representing the default adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_a459d0a43c02c9cb8865aec0d27b40f3b}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!getAdapter@{getAdapter}}
+\index{getAdapter@{getAdapter}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{getAdapter()}{getAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_a3d88fbd98ed4f1b5152e03fb9b2682b1} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::get\+Adapter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Retrieves the default Bluetooth adapter. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} representing the default adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_a459d0a43c02c9cb8865aec0d27b40f3b}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!getAdapter@{getAdapter}}
+\index{getAdapter@{getAdapter}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{getAdapter()}{getAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::get\+Adapter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{adapter\+Address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves a Bluetooth adapter by its address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adapter\+Address} & The Bluetooth address of the adapter in format "{}\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shared pointer to \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} representing the requested adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_ad530cfdcbaec8e83d5e7ace7cf1f1fc1}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!getAdapter@{getAdapter}}
+\index{getAdapter@{getAdapter}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{getAdapter()}{getAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_a1850f5b2edd9f328ab6228489b8f5a41} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_adapter}{IAdapter}} $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::get\+Adapter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{adapter\+Address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Retrieves a Bluetooth adapter by its address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adapter\+Address} & The Bluetooth address of the adapter in format "{}\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX\+:\+XX"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shared pointer to \doxylink{classyhkcatprint_1_1_i_adapter}{IAdapter} representing the requested adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_ad530cfdcbaec8e83d5e7ace7cf1f1fc1}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!listAdapters@{listAdapters}}
+\index{listAdapters@{listAdapters}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{listAdapters()}{listAdapters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711} 
+virtual std\+::vector$<$ ADAPTER\+\_\+\+INFO $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::list\+Adapters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lists available Bluetooth adapters. 
+
+\begin{DoxyReturn}{Returns}
+Vector of ADAPTER\+\_\+\+INFO structures for each available adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_a2ea57a8f64b3159f20d2c446f4f68dfd}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!listAdapters@{listAdapters}}
+\index{listAdapters@{listAdapters}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{listAdapters()}{listAdapters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_af575b1ebc32cf15d75da96c4a0c43711} 
+virtual std\+::vector$<$ ADAPTER\+\_\+\+INFO $>$ yhkcatprint\+::\+IBluetooth\+Manager\+::list\+Adapters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Lists available Bluetooth adapters. 
+
+\begin{DoxyReturn}{Returns}
+Vector of ADAPTER\+\_\+\+INFO structures for each available adapter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_a2ea57a8f64b3159f20d2c446f4f68dfd}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896} 
+virtual void yhkcatprint\+::\+IBluetooth\+Manager\+::shutdown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Shuts down the Bluetooth manager and releases resources. 
+
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_aae5be9a05b11a22bbe0a454027789d16}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+\Hypertarget{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896}\index{yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!yhkcatprint::IBluetoothManager@{yhkcatprint::IBluetoothManager}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classyhkcatprint_1_1_i_bluetooth_manager_ad8a39b4da939fc7aaa5522dc3877e896} 
+virtual void yhkcatprint\+::\+IBluetooth\+Manager\+::shutdown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Shuts down the Bluetooth manager and releases resources. 
+
+
+
+Implemented in \mbox{\hyperlink{classyhkcatprint_1_1_proto_bluetooth_manager_aae5be9a05b11a22bbe0a454027789d16}{yhkcatprint\+::\+Proto\+Bluetooth\+Manager}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_bluetooth_manager_8h}{IBluetooth\+Manager.\+h}}\item 
+\mbox{\hyperlink{yhkcatprint_8manager_8ixx}{yhkcatprint.\+manager.\+ixx}}\end{DoxyCompactItemize}

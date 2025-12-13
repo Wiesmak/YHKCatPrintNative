@@ -1,0 +1,100 @@
+\doxysection{IAdapter Class Reference}
+\hypertarget{class_i_adapter}{}\label{class_i_adapter}\index{IAdapter@{IAdapter}}
+
+
+Abstract interface representing device Bluetooth adapter.  
+
+
+
+
+{\ttfamily \#include $<$IAdapter.\+h$>$}
+
+Inheritance diagram for IAdapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_adapter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1}\label{class_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAdapter} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1}\label{class_i_adapter_a0e75246c6f9883f4eaee81fd00732ea1} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAdapter} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual ADAPTER\+\_\+\+INFO \mbox{\hyperlink{class_i_adapter_a905ff4d448679f63647b3dd637332a17}{get\+Info}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves information about the Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual ADAPTER\+\_\+\+INFO \mbox{\hyperlink{class_i_adapter_a905ff4d448679f63647b3dd637332a17}{get\+Info}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves information about the Bluetooth adapter. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ $>$ \mbox{\hyperlink{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{get\+Paired\+Devices}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves a list of paired Bluetooth devices. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ $>$ \mbox{\hyperlink{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{get\+Paired\+Devices}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves a list of paired Bluetooth devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface representing device Bluetooth adapter. 
+
+\label{doc-func-members}
+\Hypertarget{class_i_adapter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_adapter_a905ff4d448679f63647b3dd637332a17}\index{IAdapter@{IAdapter}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!IAdapter@{IAdapter}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_i_adapter_a905ff4d448679f63647b3dd637332a17} 
+virtual ADAPTER\+\_\+\+INFO \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_a905ff4d448679f63647b3dd637332a17}{yhkcatprint\+::\+IAdapter\+::get\+Info}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves information about the Bluetooth adapter. 
+
+\begin{DoxyReturn}{Returns}
+ADAPTER\+\_\+\+INFO structure containing the adapter\textquotesingle{}s address and name. 
+\end{DoxyReturn}
+\Hypertarget{class_i_adapter_a905ff4d448679f63647b3dd637332a17}\index{IAdapter@{IAdapter}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!IAdapter@{IAdapter}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_i_adapter_a905ff4d448679f63647b3dd637332a17} 
+virtual ADAPTER\+\_\+\+INFO \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_a905ff4d448679f63647b3dd637332a17}{yhkcatprint\+::\+IAdapter\+::get\+Info}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Retrieves information about the Bluetooth adapter. 
+
+\begin{DoxyReturn}{Returns}
+ADAPTER\+\_\+\+INFO structure containing the adapter\textquotesingle{}s address and name. 
+\end{DoxyReturn}
+\Hypertarget{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}\index{IAdapter@{IAdapter}!getPairedDevices@{getPairedDevices}}
+\index{getPairedDevices@{getPairedDevices}!IAdapter@{IAdapter}}
+\doxysubsubsection{\texorpdfstring{getPairedDevices()}{getPairedDevices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117} 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{yhkcatprint\+::\+IAdapter\+::get\+Paired\+Devices}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves a list of paired Bluetooth devices. 
+
+\begin{DoxyReturn}{Returns}
+Vector of shared pointers to \doxylink{class_i_device}{IDevice} representing paired devices. 
+\end{DoxyReturn}
+\Hypertarget{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}\index{IAdapter@{IAdapter}!getPairedDevices@{getPairedDevices}}
+\index{getPairedDevices@{getPairedDevices}!IAdapter@{IAdapter}}
+\doxysubsubsection{\texorpdfstring{getPairedDevices()}{getPairedDevices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_i_adapter_ac1fc947c4161a9c03c011ff33b07d117} 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_device}{IDevice}} $>$ $>$ \mbox{\hyperlink{classyhkcatprint_1_1_i_adapter_ac1fc947c4161a9c03c011ff33b07d117}{yhkcatprint\+::\+IAdapter\+::get\+Paired\+Devices}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [export]}, {\ttfamily [pure virtual]}}
+
+
+
+Retrieves a list of paired Bluetooth devices. 
+
+\begin{DoxyReturn}{Returns}
+Vector of shared pointers to \doxylink{class_i_device}{IDevice} representing paired devices. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+IAdapter.\+h\item 
+\mbox{\hyperlink{yhkcatprint_8adapter_8ixx}{yhkcatprint.\+adapter.\+ixx}}\end{DoxyCompactItemize}

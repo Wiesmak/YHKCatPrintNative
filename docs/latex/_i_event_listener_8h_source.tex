@@ -1,0 +1,52 @@
+\doxysection{IEvent\+Listener.\+h}
+\hypertarget{_i_event_listener_8h_source}{}\label{_i_event_listener_8h_source}\mbox{\hyperlink{_i_event_listener_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*++}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Copyright\ (C)\ 2025\ Umamusume\ Polska}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{Module\ Name:}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ IEventListener.h}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{Abstract:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ \ Abstract\ interface\ for\ receiving\ asynchronous\ events.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{-\/-\/*/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_device_8h}{IDevice.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_rfcomm_socket_8h}{IRfcommSocket.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{namespace\ }yhkcatprint}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structyhkcatprint_1_1___e_r_r_o_r___i_n_f_o}{\_ERROR\_INFO}}}
+\DoxyCodeLine{00034\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structyhkcatprint_1_1___e_r_r_o_r___i_n_f_o_a237f335f67fe91d2851d2390385ab562}{code}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structyhkcatprint_1_1___e_r_r_o_r___i_n_f_o_ab71dde673eff3ce5f6667d53426ad886}{message}};}
+\DoxyCodeLine{00043\ \ \ \ \ \}\ ERROR\_INFO;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener}{IEventListener}}}
+\DoxyCodeLine{00055\ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_a04b9c8769c0b69c50d797eb52af7e2c2}{\string~IEventListener}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_a431399c8d64ac9c3b6b031a2269ff072}{onDeviceConnected}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb}{DEVICE\_INFO}}\&)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_a4a6c53ad8111068f5f04f1e65d58e22a}{onDeviceDisconnected}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{_i_device_8h_a7c6b19228dc7b75e47d4e2afa767e7bb}{DEVICE\_INFO}}\&)\ =\ 0;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_ac5b06f913924dc3d9f03561a8c66a5d0}{onSocketDateReceived}}(}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket}{IRfcommSocket}}\&,}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t*\ data,}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ size)\ =\ 0;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_a373f059bf4b6d31e7ac4bb90d8810a02}{onSocketClosed}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_rfcomm_socket}{IRfcommSocket}}\&)\ =\ 0;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classyhkcatprint_1_1_i_event_listener_accc9190ecf1e4ae4786a44bf4bf58878}{onError}}(\mbox{\hyperlink{_i_event_listener_8h_ab3606cf6b62ed7eaa122b39c20983fa0}{ERROR\_INFO}})\ =\ 0;}
+\DoxyCodeLine{00100\ \ \ \ \ \};}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}
