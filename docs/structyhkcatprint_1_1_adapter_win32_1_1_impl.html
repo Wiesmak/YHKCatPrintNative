@@ -84,7 +84,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('structyhkcatprint_1_1_adapter_win32_1_1_impl.html','',''); });
+$(function(){initNavTree('structyhkcatprint_1_1_adapter_win32_1_1_impl.html','','structyhkcatprint_1_1_adapter_win32_1_1_impl-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -110,9 +110,154 @@ $(function(){initNavTree('structyhkcatprint_1_1_adapter_win32_1_1_impl.html','',
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structyhkcatprint_1_1_adapter_win32_1_1_impl-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">yhkcatprint::AdapterWin32&lt; TDevice &gt;::Impl&lt; TDevice &gt; Struct Template Reference<div class="ingroups">module <a class="el" href="module__yhkcatprint_8win32.html">yhkcatprint.win32</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa2ab54db9030344788444f2da71edff7" id="r_aa2ab54db9030344788444f2da71edff7"><td class="memItemLeft" align="right" valign="top">ADAPTER_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2ab54db9030344788444f2da71edff7">readAdapterInfo</a> (HANDLE <a class="el" href="#a8323000975efad432e491bd56b596b8f">hRadio</a>)</td></tr>
+<tr class="memdesc:aa2ab54db9030344788444f2da71edff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads adapter information from the Bluetooth radio.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7f99548820445cd948080e8a4f5db6ac" id="r_a7f99548820445cd948080e8a4f5db6ac"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f99548820445cd948080e8a4f5db6ac">formatBthAddr</a> (ULONGLONG ullLong)</td></tr>
+<tr class="memdesc:a7f99548820445cd948080e8a4f5db6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a Bluetooth address from ULONGLONG to string.  <br /></td></tr>
+<tr class="memitem:a147503f361afdc1d6ba4ae66e0e8bdf6" id="r_a147503f361afdc1d6ba4ae66e0e8bdf6"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147503f361afdc1d6ba4ae66e0e8bdf6">wideStringToString</a> (const wchar_t *wideStr)</td></tr>
+<tr class="memdesc:a147503f361afdc1d6ba4ae66e0e8bdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a wide string (std::wstring) to a standard string (std::string).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8323000975efad432e491bd56b596b8f" id="r_a8323000975efad432e491bd56b596b8f"><td class="memItemLeft" align="right" valign="top"><a id="a8323000975efad432e491bd56b596b8f" name="a8323000975efad432e491bd56b596b8f"></a>
+HANDLE&#160;</td><td class="memItemRight" valign="bottom"><b>hRadio</b></td></tr>
+<tr class="memdesc:a8323000975efad432e491bd56b596b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth radio handle. <br /></td></tr>
+<tr class="memitem:a8aff63e2272a82d6a753a7255ec76418" id="r_a8aff63e2272a82d6a753a7255ec76418"><td class="memItemLeft" align="right" valign="top"><a id="a8aff63e2272a82d6a753a7255ec76418" name="a8aff63e2272a82d6a753a7255ec76418"></a>
+ADAPTER_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>cachedInfo</b></td></tr>
+<tr class="memdesc:a8aff63e2272a82d6a753a7255ec76418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached adapter information. <br /></td></tr>
+<tr class="memitem:a3a13938e007a5a421db08793589932b2" id="r_a3a13938e007a5a421db08793589932b2"><td class="memItemLeft" align="right" valign="top"><a id="a3a13938e007a5a421db08793589932b2" name="a3a13938e007a5a421db08793589932b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>infoCached</b> = false</td></tr>
+<tr class="memdesc:a3a13938e007a5a421db08793589932b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating if adapter information is cached. <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a7f99548820445cd948080e8a4f5db6ac" name="a7f99548820445cd948080e8a4f5db6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f99548820445cd948080e8a4f5db6ac">&#9670;&#160;</a></span>formatBthAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classyhkcatprint_1_1_adapter_win32.html">yhkcatprint::AdapterWin32</a>&lt; TDevice &gt;<a class="el" href="structyhkcatprint_1_1_adapter_win32_1_1_impl.html">::Impl</a>&lt; TDevice &gt;::formatBthAddr </td>
+          <td>(</td>
+          <td class="paramtype">ULONGLONG</td>          <td class="paramname"><span class="paramname"><em>ullLong</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formats a Bluetooth address from ULONGLONG to string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ullLong</td><td>Bluetooth address as ULONGLONG. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted Bluetooth address as string in "XX:XX:XX:XX:XX:XX" format. </dd></dl>
+
+</div>
+</div>
+<a id="aa2ab54db9030344788444f2da71edff7" name="aa2ab54db9030344788444f2da71edff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ab54db9030344788444f2da71edff7">&#9670;&#160;</a></span>readAdapterInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADAPTER_INFO <a class="el" href="classyhkcatprint_1_1_adapter_win32.html">yhkcatprint::AdapterWin32</a>&lt; TDevice &gt;<a class="el" href="structyhkcatprint_1_1_adapter_win32_1_1_impl.html">::Impl</a>&lt; TDevice &gt;::readAdapterInfo </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE</td>          <td class="paramname"><span class="paramname"><em>hRadio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads adapter information from the Bluetooth radio. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hRadio</td><td>Handle to the Bluetooth radio.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ADAPTER_INFO structure containing the adapter's address and name. </dd></dl>
+
+</div>
+</div>
+<a id="a147503f361afdc1d6ba4ae66e0e8bdf6" name="a147503f361afdc1d6ba4ae66e0e8bdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147503f361afdc1d6ba4ae66e0e8bdf6">&#9670;&#160;</a></span>wideStringToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<div class="memtemplate">
+template&lt;std::derived_from&lt; <a class="el" href="class_i_device.html">IDevice</a> &gt; TDevice&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classyhkcatprint_1_1_adapter_win32.html">yhkcatprint::AdapterWin32</a>&lt; TDevice &gt;<a class="el" href="structyhkcatprint_1_1_adapter_win32_1_1_impl.html">::Impl</a>&lt; TDevice &gt;::wideStringToString </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *</td>          <td class="paramname"><span class="paramname"><em>wideStr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a wide string (std::wstring) to a standard string (std::string). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wideStr</td><td>The wide string to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted standard string. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="win32__adapter_8cpp.html">win32_adapter.cpp</a></li>
 </ul>

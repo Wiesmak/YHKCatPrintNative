@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['win32_5fadapter_2ecpp_0',['win32_adapter.cpp',['../win32__adapter_8cpp.html',1,'']]],
-  ['win32_5fdevice_2ecpp_1',['win32_device.cpp',['../win32__device_8cpp.html',1,'']]],
-  ['win32_5frfcomm_2ecpp_2',['win32_rfcomm.cpp',['../win32__rfcomm_8cpp.html',1,'']]]
+  ['send_0',['send',['../classyhkcatprint_1_1_i_rfcomm_socket.html#a5ac6dd02965c25df07c1096e3db2d133',1,'yhkcatprint::IRfcommSocket::send()'],['../classyhkcatprint_1_1_proto_rfcomm_socket.html#aa45e4db6952e73363a50d801a6672dee',1,'yhkcatprint::ProtoRfcommSocket::send()'],['../classyhkcatprint_1_1_i_rfcomm_socket.html#a4ebf3e24474a10fcd35ee66525cb64f2',1,'yhkcatprint::IRfcommSocket::send()'],['../classyhkcatprint_1_1_rfcomm_socket_win32.html#a34b00c3165dd1467f25bf39231561090',1,'yhkcatprint::RfcommSocketWin32::send()'],['../class_i_rfcomm_socket.html#a5ac6dd02965c25df07c1096e3db2d133',1,'IRfcommSocket::send(const uint8_t *data, size_t size)=0'],['../class_i_rfcomm_socket.html#a4ebf3e24474a10fcd35ee66525cb64f2',1,'IRfcommSocket::send(const std::uint8_t *data, size_t size)=0'],['../class_proto_rfcomm_socket.html#aa45e4db6952e73363a50d801a6672dee',1,'ProtoRfcommSocket::send()']]],
+  ['shutdown_1',['shutdown',['../classyhkcatprint_1_1_i_bluetooth_manager.html#ad8a39b4da939fc7aaa5522dc3877e896',1,'yhkcatprint::IBluetoothManager::shutdown()'],['../classyhkcatprint_1_1_proto_bluetooth_manager.html#aae5be9a05b11a22bbe0a454027789d16',1,'yhkcatprint::ProtoBluetoothManager::shutdown()'],['../classyhkcatprint_1_1_i_bluetooth_manager.html#ad8a39b4da939fc7aaa5522dc3877e896',1,'yhkcatprint::IBluetoothManager::shutdown()']]]
 ];
